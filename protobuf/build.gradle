@@ -10,6 +10,7 @@ plugins {
 description = 'gRPC: Protobuf'
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-api'),
             libraries.jsr305,
             libraries.protobuf

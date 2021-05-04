@@ -10,6 +10,7 @@ description = "gRPC: Netty Shaded"
 sourceSets { testShadow {} }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation project(':grpc-netty')
     runtimeOnly libraries.netty_tcnative,
             libraries.netty_epoll

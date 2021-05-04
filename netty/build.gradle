@@ -16,6 +16,7 @@ configurations {
 evaluationDependsOn(project(':grpc-core').path)
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-core'),
             libraries.netty
     implementation libraries.netty_proxy_handler

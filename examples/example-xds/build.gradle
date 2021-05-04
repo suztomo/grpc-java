@@ -27,6 +27,7 @@ def nettyTcNativeVersion = '2.0.31.Final'
 def protocVersion = '3.12.0'
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-services:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"

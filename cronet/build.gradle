@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-core'),
             libraries.cronet_api
     guavaDependency 'implementation'

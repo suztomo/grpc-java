@@ -11,6 +11,7 @@ description = "gRPC: OkHttp"
 evaluationDependsOn(project(':grpc-core').path)
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-core')
     api (libraries.okhttp) {
         // prefer our own versions instead of okhttp's dependency

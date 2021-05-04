@@ -8,6 +8,7 @@ plugins {
 
 description = "gRPC: Stub"
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-api')
     guavaDependency 'api'
     testImplementation libraries.truth,

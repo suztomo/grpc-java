@@ -27,6 +27,7 @@ description = "gRPC: XDS plugin"
 evaluationDependsOn(project(':grpc-core').path)
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation project(':grpc-protobuf'),
             project(':grpc-stub'),
             project(':grpc-core'),

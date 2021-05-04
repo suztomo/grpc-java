@@ -32,6 +32,7 @@ for (subproject in rootProject.subprojects) {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api subprojects.minus([project(':grpc-protobuf-lite')])
 }
 

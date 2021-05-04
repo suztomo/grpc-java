@@ -46,6 +46,7 @@ protobuf {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation 'com.android.support:appcompat-v7:28.0.0'
 
     // You need to build grpc-java to obtain these libraries below.

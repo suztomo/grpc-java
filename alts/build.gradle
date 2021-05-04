@@ -15,6 +15,7 @@ targetCompatibility = 1.7
 evaluationDependsOn(project(':grpc-core').path)
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-core')
     implementation project(':grpc-auth'),
             project(':grpc-grpclb'),

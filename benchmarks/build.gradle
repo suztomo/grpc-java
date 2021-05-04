@@ -21,6 +21,7 @@ configurations {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation project(':grpc-core'),
             project(':grpc-netty'),
             project(':grpc-okhttp'),

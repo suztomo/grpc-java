@@ -47,6 +47,7 @@ android {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.android.support:support-annotations:26.1.0'

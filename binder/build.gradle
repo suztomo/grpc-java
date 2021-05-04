@@ -28,6 +28,7 @@ repositories {
 }
 
 dependencies {
+    testRuntime enforcedPlatform('com.google.cloud:gcp-lts-bom:0.1.0-SNAPSHOT')
     api project(':grpc-core')
     guavaDependency 'implementation'
     implementation libraries.androidx_annotation
